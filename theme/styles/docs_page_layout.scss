@@ -1,5 +1,112 @@
+$backgroundColor: #0a0e12;
+$footerBackgroundColor: #05080a;
+
+$dividerColor: rgba(255, 255, 255, 0.05);
+$standardDividerBorder: 1px solid $dividerColor;
+
 $contributorDiameter: 32px;
 $contributorRadius: 16px;
+
+html[data-bs-theme="dark"] {
+
+  .navbar {
+    border-bottom: $standardDividerBorder;
+
+    .navbar-brand {
+      .name {
+        color: WHITE;
+      }
+    }
+
+    .nav-item {
+      a, .fa {
+        color: #CCCCCC;
+
+        &:hover {
+          color: WHITE;
+        }
+      }
+    }
+  }
+
+  nav.main {
+    ol.organization-links {
+      a {
+        background: rgba(255, 255, 255, 0.02);
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.10);
+        }
+      }
+    }
+
+    .organization-nav-divider {
+      background: $dividerColor;
+    }
+
+    a {
+      color: #AAAAAA;
+
+      &:hover {
+        color: WHITE;
+      }
+    }
+
+    .link-group {
+      ol {
+        border-left: 2px solid #7f00a6;
+      }
+    }
+
+    .contributors {
+      .remaining-count {
+        .bubble {
+          background: #333333;
+        }
+      }
+    }
+  }
+
+  body {
+    background: $backgroundColor;
+  }
+
+  main {
+    header {
+      background: rgba(255, 255, 255, 0.02);
+
+      color: WHITE;
+    }
+  }
+
+  .table-of-contents {
+    ol {
+      border-left: $standardDividerBorder;
+
+      li {
+        a {
+          color: #CCCCCC;
+
+          &:hover {
+            color: WHITE;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background: $footerBackgroundColor;
+
+    color: #AAAAAA;
+
+    .built-with {
+      a {
+        color: #FFFF00;
+      }
+    }
+  }
+}
 
 .navbar {
   margin-bottom: 24px;
