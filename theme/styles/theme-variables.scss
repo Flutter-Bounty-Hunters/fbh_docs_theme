@@ -1,9 +1,11 @@
-$backgroundColor: #0a0e12;
-$footerBackgroundColor: #05080a;
+@import 'theme-overrides';
 
-$accentColor: #7f00a6;
-$dividerColor: rgba(255, 255, 255, 0.05);
-$standardDividerBorder: 1px solid $dividerColor;
+$backgroundColor: #0a0e12 !default;
+$footerBackgroundColor: #05080a !default;
 
-$contributorDiameter: 32px;
-$contributorRadius: 16px;
+$accentColor: #7f00a6 !default;
+$dividerColor: rgba(255, 255, 255, 0.05) !default;
+$standardDividerBorder: 1px solid $dividerColor !default;
+
+$contributorDiameter: 32px !default;
+$contributorRadius: 16px !default;
