@@ -1,9 +1,9 @@
-@use 'theme-variables';
+@use 'theme-variables' as vars;
 
 html[data-bs-theme="dark"] {
 
   .navbar {
-    border-bottom: $standardDividerBorder;
+    border-bottom: $var.standardDividerBorder;
 
     .navbar-brand {
       .name {
@@ -34,7 +34,7 @@ html[data-bs-theme="dark"] {
     }
 
     .organization-nav-divider {
-      background: $dividerColor;
+      background: $vars.dividerColor;
     }
 
     a {
@@ -47,7 +47,7 @@ html[data-bs-theme="dark"] {
 
     .link-group {
       ol {
-        border-left: 2px solid $accentColor;
+        border-left: 2px solid $vars.accentColor;
       }
     }
 
@@ -61,7 +61,7 @@ html[data-bs-theme="dark"] {
   }
 
   body {
-    background: $backgroundColor;
+    background: $vars.backgroundColor;
   }
 
   main {
@@ -74,7 +74,7 @@ html[data-bs-theme="dark"] {
 
   .table-of-contents {
     ol {
-      border-left: $standardDividerBorder;
+      border-left: $vars.standardDividerBorder;
 
       li {
         a {
@@ -89,7 +89,7 @@ html[data-bs-theme="dark"] {
   }
 
   footer {
-    background: $footerBackgroundColor;
+    background: $vars.footerBackgroundColor;
 
     color: #AAAAAA;
 
@@ -270,14 +270,14 @@ nav.main {
       margin-right: 8px;
       margin-bottom: 48px;
 
-      height: $contributorDiameter;
+      height: $vars.contributorDiameter;
       padding: 0;
 
       a {
         display: block;
-        width: $contributorDiameter;
-        height: $contributorDiameter;
-        border-radius: $contributorRadius;
+        width: $vars.contributorDiameter;
+        height: $vars.contributorDiameter;
+        border-radius: $vars.contributorRadius;
 
         // Note: We show the contributor photo as a background image because
         //       displaying it as an <img> results in a few extra pixels above
@@ -293,7 +293,7 @@ nav.main {
       margin: 0;
       padding: 0;
 
-      height: $contributorDiameter;
+      height: $vars.contributorDiameter;
 
       .bubble {
         display: block;
@@ -301,19 +301,19 @@ nav.main {
         margin: 0;
         padding: 0;
 
-        width: $contributorDiameter;
-        height: $contributorDiameter;
-        border-radius: $contributorRadius;
+        width: $vars.contributorDiameter;
+        height: $vars.contributorDiameter;
+        border-radius: $vars.contributorRadius;
 
         background: RED;
 
         .count {
           display: block;
-          width: $contributorDiameter;
-          height: $contributorDiameter;
+          width: $vars.contributorDiameter;
+          height: $vars.contributorDiameter;
 
           text-align: center;
-          line-height: $contributorDiameter;
+          line-height: $vars.contributorDiameter;
           vertical-align: middle;
 
           font-size: 10px;
