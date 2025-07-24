@@ -1,11 +1,4 @@
-$backgroundColor: #0a0e12;
-$footerBackgroundColor: #05080a;
-
-$dividerColor: rgba(255, 255, 255, 0.05);
-$standardDividerBorder: 1px solid $dividerColor;
-
-$contributorDiameter: 32px;
-$contributorRadius: 16px;
+@use 'docs_page_layout';
 
 html[data-bs-theme="dark"] {
 
@@ -54,7 +47,7 @@ html[data-bs-theme="dark"] {
 
     .link-group {
       ol {
-        border-left: 2px solid #7f00a6;
+        border-left: 2px solid $accentColor;
       }
     }
 
